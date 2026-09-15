@@ -1,69 +1,18 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+import { SiteFooter, SiteHeader } from "./internal-page";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.js</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+      <SiteHeader />
+      <main id="top">
+        <section className={`${styles.hero} container-fluid`}><div className="container"><div className="row align-items-center g-5"><div className="col-lg-7"><p className={styles.eyebrow}><span /> Marketing + development for the next move</p><h1>Make your brand <em>matter</em> in a noisy world.</h1><p className={styles.heroCopy}>SmTranslineInc combines digital marketing and web development to help ambitious businesses attract attention, earn trust, and grow online.</p><div className={styles.heroActions}><a className={styles.primaryButton} href="#contact">Start a conversation <span aria-hidden="true">↗</span></a><a className={styles.textLink} href="#services">Explore our services <span aria-hidden="true">↓</span></a></div></div><div className="col-lg-5"><div className={styles.heroVisual} role="img" aria-label="Creative team collaborating around a table"><div className={styles.heroVisualTag}><span>SM / 01</span><strong>Built to be<br />remembered.</strong></div></div></div></div><div className={styles.heroImage} role="img" aria-label="Creative team collaborating around a table" /></div></section>
+        <section className={`${styles.introSection} container`}><div className="row g-5"><div className="col-lg-4"><p className={styles.sectionLabel}>What we do</p><p className={styles.sectionAside}>One partner for the strategy, creative, code, and campaigns behind your next stage.</p></div><div className="col-lg-7 offset-lg-1"><h2>Ideas that work beautifully.</h2><p className={styles.largeCopy}>SmTranslineInc connects compelling marketing with thoughtful development. We clarify your story, build the right digital experience, and create campaigns that bring qualified people to your door.</p></div></div></section>
+        <section id="services" className={`${styles.servicesSection} container-fluid`}><div className="container"><div className="row justify-content-between align-items-end mb-5"><div className="col-md-6"><p className={styles.sectionLabel}>Capabilities</p><h2>Built for <em>forward.</em></h2></div><div className="col-md-4"><p className={styles.sectionAside}>A connected mix of marketing, design, development, and measurable growth.</p></div></div><div className="row g-0"><div className={`${styles.serviceCard} col-lg-3 col-md-6`}><span>01</span><h3>Brand strategy</h3><p>Positioning, messaging, and a point of view that gives your business somewhere meaningful to go.</p><a href="#contact" aria-label="Learn about brand strategy">↗</a></div><div className={`${styles.serviceCard} col-lg-3 col-md-6`}><span>02</span><h3>Digital marketing</h3><p>Content, search, social, and campaigns designed to reach the right people and create demand.</p><a href="#contact" aria-label="Learn about digital marketing">↗</a></div><div className={`${styles.serviceCard} col-lg-3 col-md-6`}><span>03</span><h3>Web development</h3><p>Fast, responsive websites and web applications built around your customers and business goals.</p><a href="#contact" aria-label="Learn about web development">↗</a></div><div className={`${styles.serviceCard} col-lg-3 col-md-6`}><span>04</span><h3>Growth support</h3><p>Ongoing improvements, analytics, and optimization that keep your digital presence working harder.</p><a href="#contact" aria-label="Learn about growth support">↗</a></div></div></div></section>
+        <section id="approach" className={`${styles.approachSection} container`}><div className="row g-5 align-items-start"><div className="col-lg-5"><p className={styles.sectionLabel}>The approach</p><h2>Clarity first.<br /><em>Then momentum.</em></h2></div><div className="col-lg-6 offset-lg-1"><div className={styles.step}><span>01</span><div><h3>Listen closely</h3><p>We start with the real story: your audience, your ambition, and the obstacle between the two.</p></div></div><div className={styles.step}><span>02</span><div><h3>Make it distinct</h3><p>We turn insight into a clear creative direction people can recognize, remember, and choose.</p></div></div><div className={styles.step}><span>03</span><div><h3>Keep it moving</h3><p>We launch with purpose, learn quickly, and keep improving what matters.</p></div></div></div></div></section>
+        <section id="contact" className={`${styles.contactSection} container-fluid`}><div className="container"><div className="row align-items-end g-4"><div className="col-lg-8"><p className={styles.eyebrow}><span /> Have a good problem?</p><h2>Let&apos;s make something <em>useful.</em></h2></div><div className="col-lg-4"><a className={styles.contactButton} href="tel:+18445853835">Call +1 844 585 3835 <span aria-hidden="true">↗</span></a></div></div></div></section>
       </main>
+      <SiteFooter />
     </div>
   );
 }
