@@ -3,6 +3,11 @@ import styles from "./page.module.css";
 export const metadata = {
   title: "KAYAK Services | Flight Search & Comparison",
   description: "Search and compare flights, explore travel services, and find better options with clear pricing and route insights.",
+  icons: {
+    icon: "/kayak-favicon.svg",
+    shortcut: "/kayak-favicon.svg",
+    apple: "/kayak-favicon.svg",
+  },
 };
 
 const serviceCards = [
