@@ -16,9 +16,9 @@ export const metadata = {
   title: "SmTranslineInc | Digital marketing and development",
   description: "SmTranslineInc helps ambitious businesses grow online through digital marketing, web development, and thoughtful creative strategy.",
   icons: {
-    icon: "/kayak-favicon.svg",
-    shortcut: "/kayak-favicon.svg",
-    apple: "/kayak-favicon.svg",
+    icon: "/sm-favicon.svg",
+    shortcut: "/sm-favicon.svg",
+    apple: "/sm-favicon.svg",
   },
 };
 

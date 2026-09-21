@@ -4,9 +4,9 @@ export const metadata = {
   title: "KAYAK Services | Flight Search & Comparison",
   description: "Search and compare flights, explore travel services, and find better options with clear pricing and route insights.",
   icons: {
-    icon: "/kayak-favicon.svg",
-    shortcut: "/kayak-favicon.svg",
-    apple: "/kayak-favicon.svg",
+    icon: "/kayak-logo.png",
+    shortcut: "/kayak-logo.png",
+    apple: "/kayak-logo.png",
   },
 };
 
@@ -79,7 +79,7 @@ export default function KayakServicesPage() {
         <div className="container">
           <div className={styles.navInner}>
             <a href="#flights" className={styles.navbarBrand} aria-label="KAYAK home">
-              <img src="/kayak-logo.svg" alt="KAYAK logo" className={styles.logoImage} />
+              <img src="/kayak-logo.png" alt="KAYAK logo" className={styles.logoImage} />
             </a>
 
             <button type="button" className={styles.navToggle} aria-label="Toggle menu">
@@ -353,7 +353,7 @@ export default function KayakServicesPage() {
         <div className="container">
           <div className={styles.footerGrid}>
             <div>
-              <img src="/kayak-logo.svg" alt="KAYAK logo" className={styles.footerLogo} />
+              <img src="/kayak-logo.png" alt="KAYAK logo" className={styles.footerLogo} />
               <p className={styles.footerCopy}>Search and compare flight options to help plan your next journey.</p>
             </div>
 
