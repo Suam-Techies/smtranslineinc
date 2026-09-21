@@ -73,7 +73,9 @@ export default function KayakServicesPage() {
       <header className={styles.navbar}>
         <div className="container">
           <div className={styles.navInner}>
-            <a href="#flights" className={styles.navbarBrand}>KAYAK</a>
+            <a href="#flights" className={styles.navbarBrand} aria-label="KAYAK home">
+              <img src="/kayak-logo.svg" alt="KAYAK logo" className={styles.logoImage} />
+            </a>
 
             <button type="button" className={styles.navToggle} aria-label="Toggle menu">
               <span />
@@ -346,7 +348,7 @@ export default function KayakServicesPage() {
         <div className="container">
           <div className={styles.footerGrid}>
             <div>
-              <div className={styles.footerBrand}>KAYAK</div>
+              <img src="/kayak-logo.svg" alt="KAYAK logo" className={styles.footerLogo} />
               <p className={styles.footerCopy}>Search and compare flight options to help plan your next journey.</p>
             </div>
 

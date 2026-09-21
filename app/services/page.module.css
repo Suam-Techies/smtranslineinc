@@ -21,10 +21,22 @@
 }
 
 .navbarBrand {
-  font-size: 26px;
-  font-weight: 800;
-  letter-spacing: -0.06em;
-  color: #ff5a1f !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+}
+
+.logoImage,
+.footerLogo {
+  display: block;
+  height: 34px;
+  width: auto;
+}
+
+.footerLogo {
+  height: 42px;
+  margin-bottom: 0.75rem;
 }
 
 .navList {
