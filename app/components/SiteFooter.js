@@ -4,7 +4,7 @@ import Image from "next/image";
 export function SiteFooter() {
   return (
     <footer className="footer">
-      <div>
+      <div className="footerBrandBlock">
         <Link className="brand" href="/" aria-label="SmTranslineInc home">
           <Image
             src="/transline.png"
@@ -15,24 +15,7 @@ export function SiteFooter() {
           />
         </Link>
         <p>Digital marketing and development with a point of view.</p>
-      </div>
 
-      <div>
-        <strong>Explore</strong>
-        <Link href="/services">Services</Link>
-        <Link href="/process">Our process</Link>
-        <Link href="/about">About us</Link>
-        <Link href="/contact">Contact us</Link>
-      </div>
-
-      <div>
-        <strong>Information</strong>
-        <Link href="/privacy-policy">Privacy policy</Link>
-        <Link href="/terms-and-conditions">Terms &amp; conditions</Link>
-      </div>
-
-      <div>
-        <strong>Follow</strong>
         <div className="socialLinks">
           <a className="socialLink" href="https://instagram.com/smtranslineinc" target="_blank" rel="noreferrer" aria-label="Instagram">
             <i className="bi bi-instagram" aria-hidden="true" />
@@ -47,6 +30,20 @@ export function SiteFooter() {
             <span>Pinterest</span>
           </a>
         </div>
+      </div>
+
+      <div>
+        <strong>Explore</strong>
+        <Link href="/services">Services</Link>
+        <Link href="/process">Our process</Link>
+        <Link href="/about">About us</Link>
+        <Link href="/contact">Contact us</Link>
+      </div>
+
+      <div>
+        <strong>Information</strong>
+        <Link href="/privacy-policy">Privacy policy</Link>
+        <Link href="/terms-and-conditions">Terms &amp; conditions</Link>
       </div>
 
       <div>
