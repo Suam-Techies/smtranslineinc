@@ -1,234 +1,165 @@
 import styles from "./page.module.css";
+import { SiteHeader } from "../components/SiteHeader";
+import { SiteFooter } from "../internal-page";
 
 export const metadata = {
-  title: "KAYAK Services | Flight Search & Comparison",
-  description: "Search and compare flights, explore travel services, and find better options with clear pricing and route insights.",
+  title: "SmTranslineInc | Digital Agency",
+  description: "SmTranslineInc is a digital agency helping businesses grow with strategy, SEO, web design, paid media, and conversion-focused marketing.",
   icons: {
-    icon: "/kayak-logo.png",
-    shortcut: "/kayak-logo.png",
-    apple: "/kayak-logo.png",
+    icon: "/sm-favicon.svg",
+    shortcut: "/sm-favicon.svg",
+    apple: "/sm-favicon.svg",
   },
 };
 
 const serviceCards = [
   {
     icon: "bi-search",
-    title: "Search Flights",
-    text: "Search available flights based on your destination, travel dates and passenger requirements.",
+    title: "SEO Growth",
+    text: "Improve rankings, attract qualified buyers, and turn search visibility into consistent leads.",
   },
   {
     icon: "bi-bar-chart",
-    title: "Compare Options",
-    text: "Compare different airlines, schedules, routes, prices and flight durations in one place.",
+    title: "Paid Media",
+    text: "Launch high-converting campaigns across search, social, and retargeting to scale revenue faster.",
   },
   {
     icon: "bi-calendar-check",
-    title: "Flexible Travel",
-    text: "Explore different dates and flight combinations to find options that fit your schedule.",
+    title: "Content Strategy",
+    text: "Build authority with message-driven content, landing pages, and conversion assets your market can trust.",
   },
   {
     icon: "bi-globe2",
-    title: "Global Destinations",
-    text: "Explore domestic and international flight options for destinations around the world.",
+    title: "Brand Positioning",
+    text: "Clarify your offer, sharpen your message, and create a digital presence that wins attention and trust.",
   },
 ];
 
 const stepList = [
   {
     number: "1",
-    title: "Enter Your Trip",
-    text: "Select your departure city, destination, dates and number of travelers.",
+    title: "Audit & Discovery",
+    text: "We review your market, audience, channels, and current performance to find the biggest opportunities.",
   },
   {
     number: "2",
-    title: "Compare Flights",
-    text: "Review available routes, airlines, schedules, prices and flight durations.",
+    title: "Strategy & Planning",
+    text: "We map out the right offer, landing pages, message, and campaign structure for sustainable growth.",
   },
   {
     number: "3",
-    title: "Choose Your Option",
-    text: "Select the flight option that matches your travel preferences.",
+    title: "Launch & Optimize",
+    text: "We test, refine, and scale what works across search, social, content, and conversion funnels.",
   },
   {
     number: "4",
-    title: "Continue to Booking",
-    text: "Continue to the selected airline or travel provider to complete your reservation.",
+    title: "Measure Results",
+    text: "We track the KPIs that matter so every campaign moves your business forward with clarity.",
   },
 ];
 
 const featureList = [
-  { icon: "bi-list-check", title: "More Options", text: "Explore multiple airlines, routes and schedules." },
-  { icon: "bi-arrow-left-right", title: "Easy Comparison", text: "Compare important flight details in one place." },
-  { icon: "bi-clock", title: "Save Time", text: "Research multiple travel options without visiting numerous websites individually." },
-  { icon: "bi-map", title: "Travel Globally", text: "Search flight options for destinations around the world." },
+  { icon: "bi-list-check", title: "Clearer funnel", text: "Turn more traffic into qualified leads with stronger messaging and better conversion paths." },
+  { icon: "bi-arrow-left-right", title: "Better data", text: "Track performance with insight-led reporting that shows what is driving growth." },
+  { icon: "bi-clock", title: "Faster testing", text: "Iterate quickly, cut wasted spend, and focus on the channels that actually convert." },
+  { icon: "bi-map", title: "Stronger reach", text: "Grow your visibility across search, social, and web with a clear strategic plan." },
 ];
 
 const phoneNumber = "+1-844-585-3835";
 
 const metrics = [
-  { icon: "bi-airplane-engines", label: "Live routes", value: "12.4k+" },
-  { icon: "bi-graph-up-arrow", label: "Avg. savings", value: "18%" },
-  { icon: "bi-clock-history", label: "Fast search", value: "3 min" },
-  { icon: "bi-shield-check", label: "Verified deals", value: "99.2%" },
+  { icon: "bi-graph-up-arrow", label: "Avg. ROAS", value: "3.6x" },
+  { icon: "bi-people", label: "Qualified leads", value: "2.4x" },
+  { icon: "bi-clock-history", label: "Campaign speed", value: "2 wk" },
+  { icon: "bi-shield-check", label: "Growth focus", value: "100%" },
 ];
 
-export default function KayakServicesPage() {
+export default function ServicesPage() {
   return (
     <div className={styles.pageShell}>
-      <header className={styles.navbar}>
-        <div className="container">
-          <div className={styles.navInner}>
-            <a href="#flights" className={styles.navbarBrand} aria-label="KAYAK home">
-              <img src="/kayak-logo.png" alt="KAYAK logo" className={styles.logoImage} />
-            </a>
+      <SiteHeader />
 
-            <button type="button" className={styles.navToggle} aria-label="Toggle menu">
-              <span />
-              <span />
-              <span />
-            </button>
-
-            <div className={styles.navCollapse} id="mainNavbar">
-              <ul className={styles.navList}>
-                <li><a href="#flights" className={styles.navLink}>Flights</a></li>
-                <li><a href="#services" className={styles.navLink}>Services</a></li>
-                <li><a href="#compare" className={styles.navLink}>How It Works</a></li>
-                <li><a href="#search" className={styles.navCta}>Search Flights</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <main>
-        <section className={styles.hero} id="flights">
+      <main className={styles.main}>
+        <section className={styles.hero} id="growth">
           <div className="container">
             <div className={styles.heroRow}>
               <div className={styles.heroContent}>
                 <span className={styles.badge}>
-                  <i className="bi bi-airplane me-1" />
-                  Flight Search &amp; Comparison
+                  <i className="bi bi-rocket-takeoff me-1" />
+                  Digital Agency
                 </span>
 
-                <h1 className={styles.heroTitle}>Find Better Flights, Compare More Options</h1>
+                <h1 className={styles.heroTitle}>We build brands that grow online and convert faster.</h1>
 
                 <p className={styles.heroCopy}>
-                  Search and compare flights from airlines and travel providers to find routes, schedules
-                  and fares that fit your travel plans.
+                  SmTranslineInc is a digital agency helping businesses win attention, build trust,
+                  and turn traffic into qualified leads through strategy, design, and performance marketing.
                 </p>
+
+                <div className={styles.heroActions}>
+                  <a href="/contact" className={styles.primaryButton}>Book a strategy call</a>
+                  <a href="#services" className={styles.secondaryButton}>Explore services</a>
+                </div>
 
                 <div className={styles.heroMeta}>
                   <div className={styles.heroStat}>
-                    <strong>12k+</strong>
-                    <span>Flight routes</span>
+                    <strong>3.6x</strong>
+                    <span>Avg. ROAS</span>
                   </div>
                   <div className={styles.heroStat}>
-                    <strong>14m</strong>
-                    <span>Travellers</span>
+                    <strong>2.4x</strong>
+                    <span>Qualified leads</span>
                   </div>
                   <div className={styles.heroStat}>
                     <strong>24/7</strong>
-                    <span>Price updates</span>
+                    <span>Campaign monitoring</span>
                   </div>
-                </div>
-
-                <div className="mt-4">
-                  <a href={`tel:+18445853835`} className={styles.ctaButton} style={{ display: "inline-flex" }}>
-                    <i className="bi bi-telephone me-2" />
-                    {phoneNumber}
-                  </a>
                 </div>
               </div>
 
-           
-            </div>
-          </div>
-        </section>
-
-        <section className={styles.searchCard} id="search">
-          <div className="container">
-            <div className={styles.flightSearch}>
-              <ul className={styles.searchTabs}>
-                <li>
-                  <button type="button" className={`${styles.searchTab} ${styles.searchTabActive}`}>
-                    <i className="bi bi-arrow-left-right me-2" />
-                    Round Trip
-                  </button>
-                </li>
-                <li>
-                  <button type="button" className={styles.searchTab}>One Way</button>
-                </li>
-                <li>
-                  <button type="button" className={styles.searchTab}>Multi-City</button>
-                </li>
-              </ul>
-
-              <div className="row g-3">
-                <div className="col-lg-2 col-md-6">
-                  <label className={styles.fieldLabel}>From</label>
-                  <div className={styles.inputWrap}>
-                    <span className={styles.inputIcon}><i className="bi bi-airplane" /></span>
-                    <input type="text" className={styles.inputField} placeholder="Delhi" />
+              <div className={styles.heroVisualWrap}>
+                <div className={styles.heroVisualCard}>
+                  <div className={styles.visualBadge}>Growth strategy</div>
+                  <div className={styles.visualMetric}>
+                    <span>Performance</span>
+                    <strong>+142%</strong>
                   </div>
-                </div>
-
-                <div className="col-lg-2 col-md-6">
-                  <label className={styles.fieldLabel}>To</label>
-                  <div className={styles.inputWrap}>
-                    <span className={styles.inputIcon}><i className="bi bi-geo-alt" /></span>
-                    <input type="text" className={styles.inputField} placeholder="Dubai" />
-                  </div>
-                </div>
-
-                <div className="col-lg-2 col-md-6">
-                  <label className={styles.fieldLabel}>Depart</label>
-                  <input type="date" className={styles.inputField} />
-                </div>
-
-                <div className="col-lg-2 col-md-6">
-                  <label className={styles.fieldLabel}>Return</label>
-                  <input type="date" className={styles.inputField} />
-                </div>
-
-                <div className="col-lg-2 col-md-6">
-                  <label className={styles.fieldLabel}>Travelers</label>
-                  <div className={styles.inputWrap}>
-                    <select className={styles.inputSelect}>
-                      <option>1 Adult</option>
-                      <option>2 Adults</option>
-                      <option>3 Adults</option>
-                      <option>4 Adults</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div className="col-lg-2 col-md-6 d-flex align-items-end">
-                  <button type="button" className={styles.searchButton}>
-                    <i className="bi bi-search me-2" />
-                    Search Flights
-                  </button>
+                  <ul className={styles.visualList}>
+                    <li>SEO & content</li>
+                    <li>Brand systems</li>
+                    <li>Paid media</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className={styles.metricsBar}>
+        <section className={styles.discoverySection} id="contact">
           <div className="container">
-            <div className="row g-4">
-              {metrics.map((metric) => (
-                <div className="col-lg-3 col-md-6" key={metric.label}>
-                  <div className={styles.metricCard}>
-                    <div className={styles.metricIcon}>
-                      <i className={`bi ${metric.icon}`} />
-                    </div>
-                    <div className={styles.metricText}>
-                      <strong>{metric.value}</strong>
-                      <span>{metric.label}</span>
-                    </div>
-                  </div>
+            <div className={styles.discoveryCard}>
+              <div className={styles.discoveryHeader}>
+                <span className={styles.kicker}>Let&apos;s build your next move</span>
+                <h2>Marketing that moves your business forward.</h2>
+              </div>
+
+              <div className={styles.discoveryGrid}>
+                <div className={styles.discoveryField}>
+                  <label>Business type</label>
+                  <p>Professional services</p>
                 </div>
-              ))}
+                <div className={styles.discoveryField}>
+                  <label>Main goal</label>
+                  <p>More qualified leads</p>
+                </div>
+                <div className={styles.discoveryField}>
+                  <label>Budget range</label>
+                  <p>$1k - $5k / month</p>
+                </div>
+                <div className={styles.discoveryAction}>
+                  <a href="tel:+18445853835" className={styles.ctaButton}>{phoneNumber}</a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -236,9 +167,10 @@ export default function KayakServicesPage() {
         <section className={`${styles.sectionPadding} ${styles.servicesSection}`} id="services">
           <div className="container">
             <div className="text-center mb-5">
-              <h2 className={styles.sectionTitle}>Everything You Need to Plan Your Flight</h2>
+              <span className={styles.serviceEyebrow}>Capabilities</span>
+              <h2 className={styles.sectionTitle}>Everything your brand needs to grow online</h2>
               <p className={styles.sectionSubtitle}>
-                Explore flight options and compare important travel details before choosing the option that works for you.
+                Strategy, creative direction, campaign execution, and conversion optimization built around your business goals.
               </p>
             </div>
 
@@ -262,10 +194,10 @@ export default function KayakServicesPage() {
           <div className="container">
             <div className="row align-items-center g-5">
               <div className="col-lg-6">
-                <span className={styles.kicker}>Simple Flight Search</span>
-                <h2 className={styles.sectionTitle}>Compare Flights in a Few Simple Steps</h2>
+                <span className={styles.kicker}>Clear process</span>
+                <h2 className={styles.sectionTitle}>A focused growth plan that turns strategy into action</h2>
                 <p className={styles.compareText}>
-                  Make your flight research easier by bringing important travel information together in one convenient search.
+                  We combine brand thinking, digital execution, and measured reporting so your marketing keeps improving rather than guessing.
                 </p>
 
                 <div className={styles.compareBox}>
@@ -285,13 +217,13 @@ export default function KayakServicesPage() {
                 <div className={styles.visualPanel}>
                   <img
                     className={styles.panelImage}
-                    src="https://images.unsplash.com/photo-1542296332-2e4473faf563?auto=format&fit=crop&w=1200&q=85"
-                    alt="Passenger airplane"
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=85"
+                    alt="Marketing strategy team working together"
                   />
 
                   <div className={styles.liveChart}>
                     <div className={styles.liveChartHeader}>
-                      <span>Live fares</span>
+                      <span>Growth dashboard</span>
                       <span className={styles.liveDot} />
                     </div>
                     <div className={styles.barChart}>
@@ -311,8 +243,8 @@ export default function KayakServicesPage() {
         <section className={`${styles.sectionPadding} ${styles.featuresSection}`}>
           <div className="container">
             <div className="text-center mb-5">
-              <h2 className={styles.sectionTitle}>Why Search and Compare?</h2>
-              <p className={styles.sectionSubtitle}>Get a clearer view of your flight options before you travel.</p>
+              <h2 className={styles.sectionTitle}>Why businesses choose SmTranslineInc</h2>
+              <p className={styles.sectionSubtitle}>A sharper message, a stronger funnel, and a digital engine built for measurable growth.</p>
             </div>
 
             <div className="row g-4">
@@ -333,8 +265,8 @@ export default function KayakServicesPage() {
           <div className="container">
             <div className={styles.ctaRow}>
               <div>
-                <h2 className={styles.ctaTitle}>Ready to Start Your Journey?</h2>
-                <p className={styles.ctaLead}>Search flights and compare available travel options for your next trip.</p>
+                <h2 className={styles.ctaTitle}>Ready to grow your business online?</h2>
+                <p className={styles.ctaLead}>Partner with a digital marketing agency built to turn attention into measurable revenue.</p>
               </div>
 
               <div>
@@ -348,48 +280,7 @@ export default function KayakServicesPage() {
           </div>
         </section>
       </main>
-
-      <footer className={styles.footer}>
-        <div className="container">
-          <div className={styles.footerGrid}>
-            <div>
-              <img src="/kayak-logo.png" alt="KAYAK logo" className={styles.footerLogo} />
-              <p className={styles.footerCopy}>Search and compare flight options to help plan your next journey.</p>
-            </div>
-
-            <div>
-              <h5 className={styles.footerHeading}>Explore</h5>
-              <div className={styles.footerLinks}>
-                <a href="#flights">Flights</a>
-                <a href="#">Destinations</a>
-                <a href="#">Travel Deals</a>
-              </div>
-            </div>
-
-            <div>
-              <h5 className={styles.footerHeading}>Travel</h5>
-              <div className={styles.footerLinks}>
-                <a href="#">Domestic Flights</a>
-                <a href="#">International Flights</a>
-                <a href="#">One-Way Flights</a>
-              </div>
-            </div>
-
-            <div>
-              <h5 className={styles.footerHeading}>Support</h5>
-              <div className={styles.footerLinks}>
-                <a href="#">Help Center</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Terms &amp; Conditions</a>
-                <a href="#">Privacy Policy</a>
-              </div>
-            </div>
-          </div>
-
-          <hr className={styles.footerDivider} />
-          <div className={styles.footerBottom}>© 2026 KAYAK. All rights reserved.</div>
-        </div>
-      </footer>
+<SiteFooter />
     </div>
   );
 }

@@ -13,12 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "SmTranslineInc | Digital marketing and development",
-  description: "SmTranslineInc helps ambitious businesses grow online through digital marketing, web development, and thoughtful creative strategy.",
+  title: "SmTranslineInc | Digital Agency",
+  description: "SmTranslineInc is a digital agency helping ambitious businesses grow through strategy, creative, web development, and performance marketing.",
   icons: {
     icon: "/sm-favicon.svg",
     shortcut: "/sm-favicon.svg",
     apple: "/sm-favicon.svg",
+  },
+  other: {
+    "p:domain_verify": "9901e8593e5c6ad193f6af4e1c687b3f",
   },
 };
 
