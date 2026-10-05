@@ -1,11 +1,18 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function SiteHeader() {
   return (
     <header className="header">
-      <Link className="brand" href="/">
-        <span className="brandMark">SM</span>
-        <span>SmTranslineInc</span>
+      <Link className="brand" href="/" aria-label="SmTranslineInc home">
+        <Image
+          src="/transline.png"
+          alt="SmTranslineInc"
+          width={280}
+          height={82}
+          priority
+          className="brandLogo"
+        />
       </Link>
 
       <nav className="nav" aria-label="Main navigation">

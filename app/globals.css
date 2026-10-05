@@ -75,11 +75,29 @@ main {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
+  justify-content: center;
+  min-width: 0;
   color: #111918;
   font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: -0.04em;
+}
+
+.brandLogo {
+  display: block;
+  width: auto;
+  max-width: 250px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 10px rgba(33, 78, 124, 0.18));
+}
+
+.footerBrandLogo {
+  max-width: 220px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  filter: brightness(1.15) drop-shadow(0 2px 10px rgba(33, 78, 124, 0.3));
 }
 
 .brandMark {
@@ -598,6 +616,36 @@ main {
   display: block;
   margin-bottom: 0.45rem;
   font-style: normal;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.4rem;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: fit-content;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #f5efe7;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.socialLink:hover,
+.socialLink:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+.socialLink i {
+  font-size: 1rem;
 }
 
 .footer p {
