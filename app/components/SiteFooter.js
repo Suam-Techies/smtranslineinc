@@ -19,15 +19,12 @@ export function SiteFooter() {
         <div className="socialLinks">
           <a className="socialLink" href="https://instagram.com/smtranslineinc" target="_blank" rel="noreferrer" aria-label="Instagram">
             <i className="bi bi-instagram" aria-hidden="true" />
-            <span>Instagram</span>
           </a>
           <a className="socialLink" href="https://x.com/smtranslineinc" target="_blank" rel="noreferrer" aria-label="Twitter (X)">
             <i className="bi bi-twitter-x" aria-hidden="true" />
-            <span>Twitter (X)</span>
           </a>
           <a className="socialLink" href="https://pinterest.com/smtranslineinc" target="_blank" rel="noreferrer" aria-label="Pinterest">
             <i className="bi bi-pinterest" aria-hidden="true" />
-            <span>Pinterest</span>
           </a>
         </div>
       </div>
